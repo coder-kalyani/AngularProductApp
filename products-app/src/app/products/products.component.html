@@ -1,0 +1,25 @@
+<div class="toolbar">
+  <p class="products-text">List Of All Products</p>
+  <button mat-button (click)="addProduct()" class="btn">Add Product</button>
+</div>
+
+  <div class="card-container">
+    <div *ngFor="let item of data" class="card" (click)="onCardClick(item)">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ item.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        {{ item.description }}
+      </mat-card-content>
+      <mat-card-content class="products-title">
+        Rs. {{ item.price }}
+      </mat-card-content>
+       <mat-card-actions>
+    <button mat-button (click)="updateProduct(item)">Update</button>
+    <div class="margin-left10"></div>
+    <button mat-button class="delete-text" (click)="deleteProduct(item.id)">Delete</button>
+  </mat-card-actions>
+    </mat-card>
+   </div>
+  </div>

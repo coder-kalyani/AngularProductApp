@@ -1,0 +1,35 @@
+<div>
+  <div class="toolbar">
+    <p class="products-text">Update Product</p>
+  </div>
+  <div class="card-container">
+    <form [formGroup]="myForm" (ngSubmit)="updateProductDetails()" class="card">
+        <div class="rows"> 
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" formControlName="title" value="title" required>
+        </div>
+        <div class="rows">
+        <label for="name">Product Description:</label>
+        <input type="text" id="description" formControlName="description" required>
+        </div>
+        <div class="rows">
+        <label for="name">Price:</label>
+        <input type="text" id="price" formControlName="price" required>
+        </div>
+        <div class="rows">
+        <label for="name">Category:</label>
+        <input type="text" id="category" formControlName="category" required>
+        </div>
+        <div class="rows">
+        <label for="name">Stock: </label>
+        <input type="text" id="stock" formControlName="stock" required>
+        </div>
+        <div class="rows">
+        <label for="name">Brand:</label>
+        <input type="text" id="brand" formControlName="brand" required>
+        </div>
+        <button mat-button>Update Product</button>
+    </form>
+
+  </div>
+</div>
