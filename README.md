@@ -1,6 +1,6 @@
 # To run this Angular Product App please follow the steps
 
-## Clone this repository using git clone 
+## Clone this repository using git clone https://github.com/coder-kalyani/AngularProductApp.git
 
 ## change directory using cd products-app
 
